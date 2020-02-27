@@ -1,0 +1,130 @@
+p{
+  margin:0;
+}
+ul{
+  margin:0;
+  padding:0;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color:#777;
+}
+.todo{
+  border:1px solid #ddd;
+  min-width: 400px;
+  max-width: 600px;
+  margin:0 auto;
+}
+header{
+  border-bottom:1px solid #ccc;
+}
+ul li{
+  border-top:1px solid #ccc;
+  border-bottom:1px solid #ccc;
+  position: relative;
+}
+.mask{
+  position: absolute;
+  left:60px;
+  z-index: 0;
+  width:540px;
+  height:62px;
+}
+input{
+  border:none;
+  padding:15px 18px;
+  width:504px;
+  font-size: 26px;
+  line-height: 32px;
+  color:#333;
+  outline:none;
+}
+
+input.inputfocus{
+  border:1px solid #333;
+  padding:14px 17px;
+  white-space: nowrap;  
+}
+
+input.completed{
+  text-decoration: line-through;
+  color:#ddd;
+
+}
+
+.state,header span{
+  float:left;
+  margin:11px 10px;
+  width:38px;
+  height:38px;
+}
+
+.state{
+  border:1px solid #aaa;
+  border-radius:20px;	
+}
+
+.state img,header img{
+  position:relative;
+  top:5px;
+  left:4px; 
+}
+.state img{
+  width:28px;	
+}
+.cancel{
+  position: absolute;
+  top:12px;
+  right:12px;
+  padding:10px;
+  color:#339900;
+  opacity: 0.5;
+}
+.cancel:hover{
+  opacity:1;
+}
+
+footer{
+  position: relative;
+  font-size: 12px;
+  color:#777;
+}
+footer .uncompletedNum{
+  position: absolute;
+  top:10px;
+  left:20px;
+  z-index: -1;
+}
+footer .visibilityfilter{
+  width:180px;
+  margin:0 auto;
+}
+footer .visibilityfilter li{
+  display: inline-block;
+  margin: 5px;
+}
+footer .visibilityfilter li a{
+  display: block;
+  padding: 6px;
+  border:none;
+}
+footer .visibilityfilter li a:hover{
+  border:1px solid #eee;
+  padding:5px;
+}
+footer .visibilityfilter li a.focus{
+  border:1px solid #ccc;
+  padding:5px;
+}
+footer .clearCompleted{
+  position: absolute;
+  top:10px;
+  right:20px;
+  cursor: pointer;
+}
+footer .clearCompleted:hover{
+  text-decoration: underline;
+}
